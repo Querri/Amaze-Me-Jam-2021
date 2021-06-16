@@ -44,8 +44,9 @@ if (place_meeting(x, y+vsp, oWall)) {
 if (!place_meeting(x, y+1, oWall)) {
 	image_speed = 0;
 	sprite_index = sPlayerAir;
-	if (sign(vsp > 0)) image_index = 1; 
-	else image_index = 0;
+	if (sign(vsp <= -3)) image_index = 0; 
+	else if (sign(vsp > -3)) && (sign(vsp < 3)) image_index = 1;
+	else image_index = 2;
 } else {
 	image_speed = 1;
 	if (hsp == 0) {
