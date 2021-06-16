@@ -8,8 +8,9 @@
     {"id":{"name":"tRocky","path":"tilesets/tRocky/tRocky.yy",},"order":0,},
     {"id":{"name":"sPlayerAir","path":"sprites/sPlayerAir/sPlayerAir.yy",},"order":5,},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},"order":1,},
-    {"id":{"name":"rSpiky","path":"rooms/rSpiky/rSpiky.yy",},"order":2,},
+    {"id":{"name":"rEmpty","path":"rooms/rEmpty/rEmpty.yy",},"order":3,},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},"order":0,},
+    {"id":{"name":"rSpiky","path":"rooms/rSpiky/rSpiky.yy",},"order":2,},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":0,},
     {"id":{"name":"rTesting","path":"rooms/rTesting/rTesting.yy",},"order":0,},
   ],
@@ -28,6 +29,7 @@
     {"roomId":{"name":"rRocky","path":"rooms/rRocky/rRocky.yy",},},
     {"roomId":{"name":"rSpiky","path":"rooms/rSpiky/rSpiky.yy",},},
     {"roomId":{"name":"rTesting","path":"rooms/rTesting/rTesting.yy",},},
+    {"roomId":{"name":"rEmpty","path":"rooms/rEmpty/rEmpty.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

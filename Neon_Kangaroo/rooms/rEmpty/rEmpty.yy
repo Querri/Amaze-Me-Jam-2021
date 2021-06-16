@@ -58,8 +58,8 @@
   "creationCodeFile": "",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_1C473707","path":"rooms/rSpiky/rSpiky.yy",},
-    {"name":"inst_31B0BF","path":"rooms/rSpiky/rSpiky.yy",},
+    {"name":"inst_1C473707","path":"rooms/rEmpty/rEmpty.yy",},
+    {"name":"inst_31B0BF","path":"rooms/rEmpty/rEmpty.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
@@ -87,7 +87,7 @@
     "path": "folders/Rooms.yy",
   },
   "resourceVersion": "1.0",
-  "name": "rSpiky",
+  "name": "rEmpty",
   "tags": [],
   "resourceType": "GMRoom",
 }
