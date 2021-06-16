@@ -1,4 +1,4 @@
-/// @description Update camera
+/// @desc Update camera
 
 // Update destination
 // ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
