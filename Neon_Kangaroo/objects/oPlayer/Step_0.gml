@@ -1,7 +1,7 @@
 /// @description Update player
 
 
-if (true) {
+if (hasControl) {
 	// Get player input
 	// ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 	key_left = keyboard_check(ord("A"));
@@ -12,32 +12,32 @@ if (true) {
 	// Calculate movement
 	// ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 	var move = key_right - key_left;
-	hsp = move * walksp;
-	vsp = vsp + grv;
+	hSpeed = move * walkSpeed;
+	vSpeed = vSpeed + grav;
 
 	if (key_jump) && (place_meeting(x, y+1, oWall)) {
-		vsp = -12;
+		vSpeed = -12;
 	}
 
 
 	// Horizontal collision
 	// ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-	if (place_meeting(x+hsp, y, oWall)) {
+	if (place_meeting(x+hSpeed, y, oWall)) {
 		// move as close to wall as possible
 		// while (!place_meeting(x+sign(hspd), y, oWall)) { x = x + sign(hspd) }
-		hsp = 0;
-	} else x = x + hsp;
+		hSpeed = 0;
+	} else x = x + hSpeed;
 
 
 	// Vertical collision
 	// ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-	if (place_meeting(x, y+vsp, oWall)) {
+	if (place_meeting(x, y+vSpeed, oWall)) {
 		// move as close to floor as possible
-		while (!place_meeting(x, y+sign(vsp) ,oWall)) { 
-			y = y + sign(vsp) 
+		while (!place_meeting(x, y+sign(vSpeed) ,oWall)) { 
+			y = y + sign(vSpeed) 
 		}
-		vsp = 0;
-	} else y = y + vsp;
+		vSpeed = 0;
+	} else y = y + vSpeed;
 
 
 	// Animations
@@ -45,19 +45,19 @@ if (true) {
 	if (!place_meeting(x, y+1, oWall)) {
 		image_speed = 0;
 		sprite_index = sPlayerAir;
-		if (sign(vsp <= -3)) image_index = 0; 
-		else if (sign(vsp > -3)) && (sign(vsp < 3)) image_index = 1;
+		if (sign(vSpeed <= -3)) image_index = 0; 
+		else if (sign(vSpeed > -3)) && (sign(vSpeed < 3)) image_index = 1;
 		else image_index = 2;
 	} else {
 		image_speed = 1;
-		if (hsp == 0) {
+		if (hSpeed == 0) {
 			sprite_index = sPlayer;
 		} else {
 			sprite_index = sPlayerRun;
 		}
 	}
 
-	if (hsp != 0) image_xscale = sign(hsp);
+	if (hSpeed != 0) image_xscale = sign(hSpeed);
 } else {
 	// Player has no control
 	key_left = 0;

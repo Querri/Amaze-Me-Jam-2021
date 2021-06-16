@@ -120,7 +120,6 @@
   "inheritCode": false,
   "instanceCreationOrder": [
     {"name":"inst_1C473707","path":"rooms/rRocky/rRocky.yy",},
-    {"name":"inst_31B0BF","path":"rooms/rRocky/rRocky.yy",},
     {"name":"inst_5F2A9BB5","path":"rooms/rRocky/rRocky.yy",},
     {"name":"inst_7B6AF2","path":"rooms/rRocky/rRocky.yy",},
     {"name":"inst_3F998740","path":"rooms/rRocky/rRocky.yy",},
@@ -197,6 +196,7 @@
     {"name":"inst_68309BF1","path":"rooms/rRocky/rRocky.yy",},
     {"name":"inst_C3560F3","path":"rooms/rRocky/rRocky.yy",},
     {"name":"inst_B7B529","path":"rooms/rRocky/rRocky.yy",},
+    {"name":"inst_31B0BF","path":"rooms/rRocky/rRocky.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
