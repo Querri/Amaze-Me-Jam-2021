@@ -1,7 +1,7 @@
 /// @description Update player
 
 
-if (hasControl) {
+if (true) {
 	// Get player input
 	// ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 	key_left = keyboard_check(ord("A"));
