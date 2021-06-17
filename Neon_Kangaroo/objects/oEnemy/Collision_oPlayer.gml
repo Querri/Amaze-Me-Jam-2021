@@ -2,12 +2,11 @@
 
 // witch (other) means object that collided
 
-attackDelay--;
-if (attackDelay < 1) {
-	attackDelay = 60;
+if (attackDelayLeft <= 0) {
+	attackDelayLeft = attackDelay;
+	stunDelayLeft = stunDelay;
 	canMove = false;
 	didHit = true;
-	stunDelay = 20;
 	with (oPlayer) {
 		hp -= other.dmg;
 		vSpeed = -12;

@@ -28,7 +28,7 @@
     "path": "folders/Objects/Enemies.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oEnemyTurn",
+  "name": "oPatrolStop",
   "tags": [],
   "resourceType": "GMObject",
 }

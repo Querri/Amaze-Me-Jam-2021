@@ -4,19 +4,21 @@
 // Calculate movement
 vSpeed = vSpeed + grav;
 
+if (attackDelayLeft > 0) attackDelayLeft--;
 
 // Horizontal collision
 // ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 if (canMove) {
-	if (place_meeting(x+hSpeed, y, oWall)) {
-		// move as close to wall as possible
-		while (!place_meeting(x+sign(hSpeed), y, oWall)) { 
-			x = x + sign(hSpeed) 
-		}
-		hSpeed = -hSpeed;
-	} else if (place_meeting(x+hSpeed, y, oEnemyTurn)) {
+	if (place_meeting(x+hSpeed, y, oWall)) 
+	|| (place_meeting(x+hSpeed, y, oPatrolStop)) {
 		hSpeed = -hSpeed;
 	} else x = x + hSpeed;
+} else if (didHit) {
+	if (stunDelayLeft > 0) stunDelayLeft--;
+	else {
+		didHit = false;
+		canMove = true;
+	}
 }
 
 
@@ -30,13 +32,7 @@ if (canMove) {
 		}
 		vSpeed = 0;
 	} else y = y + vSpeed;
-} else if (didHit) {
-	if (stunDelay > 0) stunDelay--;
-	else {
-		didHit = false;
-		canMove = true;
-	}
-}
+} 
 
 
 /* Animations
@@ -54,10 +50,10 @@ if (!place_meeting(x, y+1, oWall)) {
 	} else {
 		sprite_index = sPlayerRun;
 	}
-}
+}*/
 
 if (hSpeed != 0) image_xscale = sign(hSpeed);
-*/
+
 
 
 

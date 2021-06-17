@@ -5,7 +5,10 @@
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "sSpikySnail",
+    "path": "sprites/sSpikySnail/sSpikySnail.yy",
+  },
   "persistent": false,
   "parentObjectId": {
     "name": "oEnemy",
