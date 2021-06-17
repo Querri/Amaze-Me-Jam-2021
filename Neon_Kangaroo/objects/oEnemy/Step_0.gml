@@ -7,22 +7,34 @@ vSpeed = vSpeed + grav;
 
 // Horizontal collision
 // ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-if (place_meeting(x+hSpeed, y, oWall)) {
-	// move as close to wall as possible
-	// while (!place_meeting(x+sign(hspd), y, oWall)) { x = x + sign(hspd) }
-	hSpeed = 0;
-} else x = x + hSpeed;
+if (canMove) {
+	if (place_meeting(x+hSpeed, y, oWall)) {
+		// move as close to wall as possible
+		while (!place_meeting(x+sign(hSpeed), y, oWall)) { 
+			x = x + sign(hSpeed) 
+		}
+		hSpeed = -hSpeed;
+	} else x = x + hSpeed;
+}
 
 
 // Vertical collision
 // ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-if (place_meeting(x, y+vSpeed, oWall)) {
-	// move as close to floor as possible
-	while (!place_meeting(x, y+sign(vSpeed) ,oWall)) { 
-		y = y + sign(vSpeed) 
+if (canMove) {
+	if (place_meeting(x, y+vSpeed, oWall)) {
+		// move as close to floor as possible
+		while (!place_meeting(x, y+sign(vSpeed) ,oWall)) { 
+			y = y + sign(vSpeed) 
+		}
+		vSpeed = 0;
+	} else y = y + vSpeed;
+} else if (didHit) {
+	if (stunDelay > 0) stunDelay--;
+	else {
+		didHit = false;
+		canMove = true;
 	}
-	vSpeed = 0;
-} else y = y + vSpeed;
+}
 
 
 /* Animations

@@ -14,6 +14,7 @@
     {"id":{"name":"fMenuSelect","path":"fonts/fMenuSelect/fMenuSelect.yy",},"order":1,},
     {"id":{"name":"rCredits","path":"rooms/rCredits/rCredits.yy",},"order":5,},
     {"id":{"name":"sWall","path":"sprites/sWall/sWall.yy",},"order":1,},
+    {"id":{"name":"sSpikes","path":"sprites/sSpikes/sSpikes.yy",},"order":1,},
     {"id":{"name":"tRocky","path":"tilesets/tRocky/tRocky.yy",},"order":0,},
     {"id":{"name":"Sprite10","path":"sprites/Sprite10/Sprite10.yy",},"order":15,},
     {"id":{"name":"rMenu","path":"rooms/rMenu/rMenu.yy",},"order":6,},

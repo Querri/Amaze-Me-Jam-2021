@@ -4,7 +4,10 @@
 
 attackDelay--;
 if (attackDelay < 1) {
-	attackDelay = 50;
+	attackDelay = 60;
+	canMove = false;
+	didHit = true;
+	stunDelay = 20;
 	with (oPlayer) {
 		hp -= oEnemy.dmg;
 		hasControl = false;

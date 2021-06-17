@@ -3,7 +3,7 @@
 /// @arg Frames sets the length of the shake in frames
 
 
-function ScreenShake(){
+function ScreenShake(argument0, argument1){
 	with (oCamera) {
 		if (argument0 > shake_remain) {
 			shake_magnitude = argument0;
