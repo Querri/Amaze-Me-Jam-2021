@@ -2,9 +2,9 @@
 
 // Update destination
 // ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-if (instance_exists(follow)) {
-	xTo = follow.x;
-	yTo = follow.y;
+if (instance_exists(camFollow)) {
+	xTo = camFollow.x;
+	yTo = camFollow.y;
 }
 
 
@@ -13,10 +13,19 @@ if (instance_exists(follow)) {
 x += (xTo - x) / 25;
 y += (yTo - y) / 25;
 
-x = clamp(x, view_x_half, room_width-view_x_half);
-y = clamp(y, view_y_half, room_width-view_y_half);
+// Keep camera inside room
+x = clamp(x, viewXHalf, room_width - viewXHalf - shake_buffer);
+y = clamp(y, viewYHalf, room_width - viewYHalf - shake_buffer);
+
+
+// Screen shake
+if (shake_remain > 0) {
+	x += random_range(-shake_remain, shake_remain);
+	y += random_range(-shake_remain, shake_remain);
+	shake_remain = max(0, shake_remain - ((1/shake_lenght) * shake_magnitude));
+}
 
 
 // Update camera view
 // ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-camera_set_view_pos(cam, x-view_x_half, y-view_y_half);
+camera_set_view_pos(cam, x-viewXHalf, y-viewYHalf);
