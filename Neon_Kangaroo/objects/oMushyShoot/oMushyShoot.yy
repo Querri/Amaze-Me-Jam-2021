@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sSpikySpikes",
-    "path": "sprites/sSpikySpikes/sSpikySpikes.yy",
+    "name": "sMushyShoot",
+    "path": "sprites/sMushyShoot/sMushyShoot.yy",
   },
   "solid": false,
   "visible": true,
@@ -35,7 +35,7 @@
     "path": "folders/Objects/Enemies.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oMushShoot",
+  "name": "oMushyShoot",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sSpikySnail",
-    "path": "sprites/sSpikySnail/sSpikySnail.yy",
+    "name": "sMushyExplode",
+    "path": "sprites/sMushyExplode/sMushyExplode.yy",
   },
   "solid": false,
   "visible": true,
@@ -37,7 +37,7 @@
     "path": "folders/Objects/Enemies.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oMushExplode",
+  "name": "oMushyExplode",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -1,14 +1,8 @@
 {
-  "spriteId": {
-    "name": "sEnemy",
-    "path": "sprites/sEnemy/sEnemy.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
-  "spriteMaskId": {
-    "name": "sEnemy",
-    "path": "sprites/sEnemy/sEnemy.yy",
-  },
+  "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
