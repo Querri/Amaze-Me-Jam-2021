@@ -23,8 +23,14 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
-  "properties": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
+  "properties": [
+    {"varType":0,"value":"160","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"shootCountdownRate","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":0,"value":"shootCountdownRate","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"shootCountdown","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":0,"value":"1000","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"shootDistance","tags":[],"resourceType":"GMObjectProperty",},
+  ],
   "overriddenProperties": [
     {"propertyId":{"name":"canMove","path":"objects/oEnemy/oEnemy.yy",},"objectId":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"value":"0","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"walkSpeed","path":"objects/oEnemy/oEnemy.yy",},"objectId":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"value":"0","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},

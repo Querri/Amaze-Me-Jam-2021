@@ -9,7 +9,7 @@ if (attackDelay < 1) {
 	didHit = true;
 	stunDelay = 20;
 	with (oPlayer) {
-		hp -= oEnemy.dmg;
+		hp -= other.dmg;
 		vSpeed = -12;
 		hasControl = false;
 		wasHit = true;
