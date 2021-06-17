@@ -36,6 +36,7 @@
     {"id":{"name":"sSpikes4","path":"sprites/sSpikes4/sSpikes4.yy",},"order":12,},
     {"id":{"name":"sPoisonWater","path":"sprites/sPoisonWater/sPoisonWater.yy",},"order":5,},
     {"id":{"name":"oBullet","path":"objects/oBullet/oBullet.yy",},"order":8,},
+    {"id":{"name":"sSpikySnailAttack","path":"sprites/sSpikySnailAttack/sSpikySnailAttack.yy",},"order":15,},
     {"id":{"name":"rEmpty","path":"rooms/rEmpty/rEmpty.yy",},"order":3,},
     {"id":{"name":"sTilesPoisonous","path":"sprites/sTilesPoisonous/sTilesPoisonous.yy",},"order":8,},
     {"id":{"name":"sSpikes6","path":"sprites/sSpikes6/sSpikes6.yy",},"order":14,},
