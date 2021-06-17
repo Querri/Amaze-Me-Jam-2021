@@ -14,6 +14,8 @@ if (canMove) {
 			x = x + sign(hSpeed) 
 		}
 		hSpeed = -hSpeed;
+	} else if (place_meeting(x+hSpeed, y, oEnemyTurn)) {
+		hSpeed = -hSpeed;
 	} else x = x + hSpeed;
 }
 

@@ -20,6 +20,7 @@
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"oSpikySpikes","path":"objects/oSpikySpikes/oSpikySpikes.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":3.0,"scaleY":0.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":4672.0,"y":3584.0,"resourceVersion":"1.0","name":"inst_A260C8B","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oSpikySnail","path":"objects/oSpikySnail/oSpikySnail.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":5792.0,"y":3520.0,"resourceVersion":"1.0","name":"inst_64F48215","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"oEnemyTurn","path":"objects/oEnemyTurn/oEnemyTurn.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":5440.0,"y":3520.0,"resourceVersion":"1.0","name":"inst_41B6FA30","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Enemies","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"oWall","path":"objects/oWall/oWall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":4352.0,"y":3584.0,"resourceVersion":"1.0","name":"inst_58DA04AC","tags":[],"resourceType":"GMRInstance",},
@@ -384,6 +385,7 @@
     {"name":"inst_A260C8B","path":"rooms/rSpiky/rSpiky.yy",},
     {"name":"inst_64F48215","path":"rooms/rSpiky/rSpiky.yy",},
     {"name":"inst_7B46CD71","path":"rooms/rSpiky/rSpiky.yy",},
+    {"name":"inst_41B6FA30","path":"rooms/rSpiky/rSpiky.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
