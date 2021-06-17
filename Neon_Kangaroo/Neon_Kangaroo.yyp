@@ -3,6 +3,7 @@
     {"id":{"name":"oTransition","path":"objects/oTransition/oTransition.yy",},"order":3,},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"order":2,},
     {"id":{"name":"oSpikes","path":"objects/oSpikes/oSpikes.yy",},"order":1,},
+    {"id":{"name":"ScreenShake","path":"scripts/ScreenShake/ScreenShake.yy",},"order":1,},
     {"id":{"name":"sTilesRocky","path":"sprites/sTilesRocky/sTilesRocky.yy",},"order":6,},
     {"id":{"name":"sTrigger","path":"sprites/sTrigger/sTrigger.yy",},"order":9,},
     {"id":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"order":0,},

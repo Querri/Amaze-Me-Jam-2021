@@ -1,9 +1,18 @@
 /// @desc Collision with player
 
 // witch (other) means object that collided
-with (oPlayer) {
-	hp -= oEnemy.dmg;
-	vSpeed = -15;
+
+attackDelay--;
+if (attackDelay < 1) {
+	attackDelay = 50;
+	with (oPlayer) {
+		hp -= oEnemy.dmg;
+		hasControl = false;
+		wasHit = true;
+		stunDelay = 20;
+	}
+	
+	ScreenShake(10, 20);
 }
 
 
