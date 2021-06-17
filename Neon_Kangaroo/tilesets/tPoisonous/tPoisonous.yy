@@ -1,5 +1,4 @@
 {
-  "name": "tPoisonous",
   "spriteId": {
     "name": "sTilesPoisonous",
     "path": "sprites/sTilesPoisonous/sTilesPoisonous.yy",
@@ -135,6 +134,7 @@
     "path": "folders/Tile Sets.yy",
   },
   "resourceVersion": "1.0",
+  "name": "tPoisonous",
   "tags": [],
   "resourceType": "GMTileSet",
 }
