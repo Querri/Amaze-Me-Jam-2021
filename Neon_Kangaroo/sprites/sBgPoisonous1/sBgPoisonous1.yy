@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"a9989f45-c5d4-4b91-96cc-c739899e7743","path":"sprites/sBgRocky1/sBgRocky1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a9989f45-c5d4-4b91-96cc-c739899e7743","path":"sprites/sBgRocky1/sBgRocky1.yy",},"LayerId":{"name":"43a10561-0a39-4d83-bc9d-aa474d1a5012","path":"sprites/sBgRocky1/sBgRocky1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sBgRocky1","path":"sprites/sBgRocky1/sBgRocky1.yy",},"resourceVersion":"1.0","name":"a9989f45-c5d4-4b91-96cc-c739899e7743","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"ac760ab0-2307-4d0b-af18-b1325b053add","path":"sprites/sBgPoisonous1/sBgPoisonous1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"ac760ab0-2307-4d0b-af18-b1325b053add","path":"sprites/sBgPoisonous1/sBgPoisonous1.yy",},"LayerId":{"name":"a3e716ce-54f4-42de-a1e2-87865bedec7a","path":"sprites/sBgPoisonous1/sBgPoisonous1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sBgPoisonous1","path":"sprites/sBgPoisonous1/sBgPoisonous1.yy",},"resourceVersion":"1.0","name":"ac760ab0-2307-4d0b-af18-b1325b053add","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sBgRocky1","path":"sprites/sBgRocky1/sBgRocky1.yy",},
+    "spriteId": {"name":"sBgPoisonous1","path":"sprites/sBgPoisonous1/sBgPoisonous1.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"13887488-b180-4ec0-be98-4b4aab13d2be","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a9989f45-c5d4-4b91-96cc-c739899e7743","path":"sprites/sBgRocky1/sBgRocky1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"88fd01b0-4841-4c7a-bb91-f803e5ff0eb6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ac760ab0-2307-4d0b-af18-b1325b053add","path":"sprites/sBgPoisonous1/sBgPoisonous1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 1155,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sBgRocky1","path":"sprites/sBgRocky1/sBgRocky1.yy",},
+    "parent": {"name":"sBgPoisonous1","path":"sprites/sBgPoisonous1/sBgPoisonous1.yy",},
     "resourceVersion": "1.3",
-    "name": "sBgRocky1",
+    "name": "sBgPoisonous1",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"43a10561-0a39-4d83-bc9d-aa474d1a5012","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a3e716ce-54f4-42de-a1e2-87865bedec7a","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/Bg.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sBgRocky1",
+  "name": "sBgPoisonous1",
   "tags": [],
   "resourceType": "GMSprite",
 }
