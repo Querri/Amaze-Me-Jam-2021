@@ -31,7 +31,7 @@
     "path": "folders/Objects/oDecor.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oDustLPuff",
+  "name": "oDustPuff",
   "tags": [],
   "resourceType": "GMObject",
 }

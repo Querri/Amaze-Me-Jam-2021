@@ -57,7 +57,7 @@
     {"id":{"name":"sSpikes_L1","path":"sprites/sSpikes_L1/sSpikes_L1.yy",},"order":5,},
     {"id":{"name":"Sprite10","path":"sprites/Sprite10/Sprite10.yy",},"order":15,},
     {"id":{"name":"sRocks_M2","path":"sprites/sRocks_M2/sRocks_M2.yy",},"order":22,},
-    {"id":{"name":"oDustLPuff","path":"objects/oDustLPuff/oDustLPuff.yy",},"order":2,},
+    {"id":{"name":"oDustPuff","path":"objects/oDustPuff/oDustPuff.yy",},"order":2,},
     {"id":{"name":"sBgMushy2","path":"sprites/sBgMushy2/sBgMushy2.yy",},"order":10,},
     {"id":{"name":"sVines_XS3","path":"sprites/sVines_XS3/sVines_XS3.yy",},"order":8,},
     {"id":{"name":"sRocks_L1","path":"sprites/sRocks_L1/sRocks_L1.yy",},"order":26,},

@@ -1,10 +1,16 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "sDustLeaves1",
+    "path": "sprites/sDustLeaves1/sDustLeaves1.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "oDust",
+    "path": "objects/oDust/oDust.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
