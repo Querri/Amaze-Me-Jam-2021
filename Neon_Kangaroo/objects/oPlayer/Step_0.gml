@@ -14,7 +14,7 @@ if (hasControl) {
 	if (wasHit) {
 		if (stunDelay > 0) stunDelay--;
 		else {
-			if (isAlive) {
+			if (true) {                       // <---- change here to die
 				wasHit = false;
 				hasControl = true;
 			} else {
