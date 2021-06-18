@@ -2,6 +2,7 @@
 
 with (oPlayer) {
 	hp -= other.dmg;
+	if (hp <= 0) isAlive = false;
 	hasControl = false;
 	wasHit = true;
 	stunDelay = 20;

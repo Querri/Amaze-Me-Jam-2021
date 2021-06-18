@@ -13,9 +13,11 @@ if (hasControl) {
 	key_jump = 0;
 	if (wasHit) {
 		if (stunDelay > 0) stunDelay--;
-		else {
+		else if (true) {                               // <--- check if alive
 			wasHit = false;
 			hasControl = true;
+		} else {
+			SlideTransition(TRANS_MODE.RESTART);
 		}
 	}
 }

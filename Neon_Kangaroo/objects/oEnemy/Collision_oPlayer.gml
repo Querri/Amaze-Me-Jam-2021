@@ -9,6 +9,8 @@ if (attackDelayLeft <= 0) {
 	didHit = true;
 	with (oPlayer) {
 		hp -= other.dmg;
+		if (hp <= 0) isAlive = false;
+		
 		vSpeed = -12;
 		hasControl = false;
 		wasHit = true;
