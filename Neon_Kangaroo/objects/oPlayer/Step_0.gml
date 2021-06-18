@@ -14,8 +14,12 @@ if (hasControl) {
 	if (wasHit) {
 		if (stunDelay > 0) stunDelay--;
 		else {
-			wasHit = false;
-			hasControl = true;
+			if (isAlive) {
+				wasHit = false;
+				hasControl = true;
+			} else {
+				SlideTransition(TRANS_MODE.RESTART);
+			}
 		}
 	}
 }

@@ -13,6 +13,8 @@ if (attackDelayLeft <= 0) {
 		hasControl = false;
 		wasHit = true;
 		stunDelay = 20;
+		
+		if (hp <= 0) isAlive = false;
 	}
 	ScreenShake(10, 20);
 }
