@@ -37,8 +37,6 @@ if (key_jump) && (place_meeting(x, y+1, oWall)) {
 // Horizontal collision
 // ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 if (place_meeting(x+hSpeed, y, oWall)) {
-	// move as close to wall as possible
-	// while (!place_meeting(x+sign(hspd), y, oWall)) { x = x + sign(hspd) }
 	hSpeed = 0;
 } else x = x + hSpeed;
 
@@ -56,13 +54,24 @@ if (place_meeting(x, y+vSpeed, oWall)) {
 
 // Animations
 // ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+// player is in the air
 if (!place_meeting(x, y+1, oWall)) {
 	image_speed = 0;
 	sprite_index = sPlayerAir;
 	if (sign(vSpeed <= -3)) image_index = 0; 
 	else if (sign(vSpeed > -3)) && (sign(vSpeed < 3)) image_index = 1;
 	else image_index = 2;
+	
+// player is on the ground
 } else {
+	// spawn dust
+	if (sprite_index == sPlayerAir) || ((sprite_index == sPlayerRun) && (image_index == 1)) {
+		repeat(5) {
+			instance_create_layer(x + sign(hSpeed) * 4, bbox_bottom, "Dust", dustObject);
+		}
+	}
+	
 	image_speed = 1;
 	if (hSpeed == 0) {
 		sprite_index = sPlayer;
