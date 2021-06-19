@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sDustSpiky1",
-    "path": "sprites/sDustSpiky1/sDustSpiky1.yy",
+    "name": "sDustSpiky",
+    "path": "sprites/sDustSpiky/sDustSpiky.yy",
   },
   "solid": false,
   "visible": true,

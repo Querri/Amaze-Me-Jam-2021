@@ -1,20 +1,20 @@
 {
-  "bboxMode": 0,
+  "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
-  "origin": 4,
+  "origin": 9,
   "preMultiplyAlpha": false,
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 0,
-  "bbox_right": 127,
-  "bbox_top": 0,
-  "bbox_bottom": 127,
+  "bbox_left": 61,
+  "bbox_right": 104,
+  "bbox_top": 58,
+  "bbox_bottom": 89,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 128,
+  "width": 156,
   "height": 128,
   "textureGroupId": {
     "name": "Default",
@@ -24,9 +24,21 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"6ebd8217-10e9-4327-99eb-d29185da2bcd","path":"sprites/sPoisonInsect/sPoisonInsect.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6ebd8217-10e9-4327-99eb-d29185da2bcd","path":"sprites/sPoisonInsect/sPoisonInsect.yy",},"LayerId":{"name":"2b1cfc7b-3ac1-460f-8f61-1f96e4f4d842","path":"sprites/sPoisonInsect/sPoisonInsect.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sPoisonInsect","path":"sprites/sPoisonInsect/sPoisonInsect.yy",},"resourceVersion":"1.0","name":"6ebd8217-10e9-4327-99eb-d29185da2bcd","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"d089ed4d-bc2a-421e-95e7-198e3e04e026","path":"sprites/sPoisonInsect/sPoisonInsect.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"d089ed4d-bc2a-421e-95e7-198e3e04e026","path":"sprites/sPoisonInsect/sPoisonInsect.yy",},"LayerId":{"name":"d5c798b5-9c26-43f9-ba38-59f15767f289","path":"sprites/sPoisonInsect/sPoisonInsect.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sPoisonInsect","path":"sprites/sPoisonInsect/sPoisonInsect.yy",},"resourceVersion":"1.0","name":"d089ed4d-bc2a-421e-95e7-198e3e04e026","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"90616e4d-f274-4272-96dc-63ce77a78b06","path":"sprites/sPoisonInsect/sPoisonInsect.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"90616e4d-f274-4272-96dc-63ce77a78b06","path":"sprites/sPoisonInsect/sPoisonInsect.yy",},"LayerId":{"name":"d5c798b5-9c26-43f9-ba38-59f15767f289","path":"sprites/sPoisonInsect/sPoisonInsect.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sPoisonInsect","path":"sprites/sPoisonInsect/sPoisonInsect.yy",},"resourceVersion":"1.0","name":"90616e4d-f274-4272-96dc-63ce77a78b06","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"fce9083d-11aa-444f-a9e3-337ad075fe07","path":"sprites/sPoisonInsect/sPoisonInsect.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"fce9083d-11aa-444f-a9e3-337ad075fe07","path":"sprites/sPoisonInsect/sPoisonInsect.yy",},"LayerId":{"name":"d5c798b5-9c26-43f9-ba38-59f15767f289","path":"sprites/sPoisonInsect/sPoisonInsect.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sPoisonInsect","path":"sprites/sPoisonInsect/sPoisonInsect.yy",},"resourceVersion":"1.0","name":"fce9083d-11aa-444f-a9e3-337ad075fe07","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"cd53e650-5a6c-4134-b3e2-42df21bf1074","path":"sprites/sPoisonInsect/sPoisonInsect.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"cd53e650-5a6c-4134-b3e2-42df21bf1074","path":"sprites/sPoisonInsect/sPoisonInsect.yy",},"LayerId":{"name":"d5c798b5-9c26-43f9-ba38-59f15767f289","path":"sprites/sPoisonInsect/sPoisonInsect.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sPoisonInsect","path":"sprites/sPoisonInsect/sPoisonInsect.yy",},"resourceVersion":"1.0","name":"cd53e650-5a6c-4134-b3e2-42df21bf1074","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"a35d4939-666d-48a0-8299-f0e3713319b5","path":"sprites/sPoisonInsect/sPoisonInsect.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"a35d4939-666d-48a0-8299-f0e3713319b5","path":"sprites/sPoisonInsect/sPoisonInsect.yy",},"LayerId":{"name":"d5c798b5-9c26-43f9-ba38-59f15767f289","path":"sprites/sPoisonInsect/sPoisonInsect.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sPoisonInsect","path":"sprites/sPoisonInsect/sPoisonInsect.yy",},"resourceVersion":"1.0","name":"a35d4939-666d-48a0-8299-f0e3713319b5","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sPoisonInsect","path":"sprites/sPoisonInsect/sPoisonInsect.yy",},
@@ -36,12 +48,16 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 1.0,
+    "length": 5.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"e2123cc1-bdc8-4822-8382-3f028741fad4","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6ebd8217-10e9-4327-99eb-d29185da2bcd","path":"sprites/sPoisonInsect/sPoisonInsect.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"24d14d39-dfa6-4393-a670-b24316f37463","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d089ed4d-bc2a-421e-95e7-198e3e04e026","path":"sprites/sPoisonInsect/sPoisonInsect.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5a528a20-4e77-4db7-a84d-94dbd24488f4","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"90616e4d-f274-4272-96dc-63ce77a78b06","path":"sprites/sPoisonInsect/sPoisonInsect.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"ed7b5e93-294f-4999-8be7-94018458776a","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fce9083d-11aa-444f-a9e3-337ad075fe07","path":"sprites/sPoisonInsect/sPoisonInsect.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c5314a9b-c96d-4bb5-b310-0620f76b614c","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cd53e650-5a6c-4134-b3e2-42df21bf1074","path":"sprites/sPoisonInsect/sPoisonInsect.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c92a3a93-51d1-4257-8b94-ce31014375a1","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a35d4939-666d-48a0-8299-f0e3713319b5","path":"sprites/sPoisonInsect/sPoisonInsect.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -54,8 +70,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 64,
-    "yorigin": 64,
+    "xorigin": 85,
+    "yorigin": 68,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sPoisonInsect","path":"sprites/sPoisonInsect/sPoisonInsect.yy",},
@@ -65,7 +81,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"2b1cfc7b-3ac1-460f-8f61-1f96e4f4d842","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d5c798b5-9c26-43f9-ba38-59f15767f289","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
