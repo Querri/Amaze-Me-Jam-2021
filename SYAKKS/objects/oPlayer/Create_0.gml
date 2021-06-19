@@ -33,12 +33,10 @@ location = LOCATION.GROUND;
 facing = FACING.RIGHT;
 animation = ANIMATION.IDLE;
 
-
 spriteDirection = 1;
 hDirection = 1;
-stillSpeed = 0;
 walkSpeed = 3;
 runSpeed = 10;
-
-canRun = false;
-canJump = true;
+standJumpSpeed = -10;
+walkJumpSpeed = -15;
+runJumpSpeed = -20;
