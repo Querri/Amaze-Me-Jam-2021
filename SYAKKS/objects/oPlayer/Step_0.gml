@@ -26,7 +26,8 @@ if (hasControl) {
 // Calculate movement
 // ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 var move = key_right - key_left;
-hSpeed = move * walkSpeed;
+if (canStop) hSpeed = move * walkSpeed;
+
 vSpeed = vSpeed + grav;
 
 jumpBuffer--;
@@ -34,8 +35,8 @@ if (key_jump) && (canJump) && (jumpBuffer < jumpBufferLimit) {
 	canJump = 0;
 	vSpeed = jumpSpeedCurrent;
 	
-	if (hSpeed < walkSpeed) jumpSpeedCurrent = jumpSpeedBase;
-	else if (jumpSpeedCurrent > jumpSpeedMax) jumpSpeedCurrent *= 1.2;
+	// consecutive jumps are bigger
+	if (jumpSpeedCurrent > jumpSpeedMax) jumpSpeedCurrent *= 1.2;
 }
 
 
@@ -87,6 +88,7 @@ if (!place_meeting(x, y+1, oWall)) {
 		sprite_index = sPlayer;
 	} else {
 		sprite_index = sPlayerRun;
+		canStop = false;
 	}
 }
 
