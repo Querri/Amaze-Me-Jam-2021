@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Neon_Kangaroo",
-    "path": "Neon_Kangaroo.yyp",
+    "name": "SYAKKS",
+    "path": "SYAKKS.yyp",
   },
   "resourceVersion": "1.0",
   "name": "Sprite10",
