@@ -6,7 +6,7 @@
 if (hasControl) {
 	key_left = keyboard_check(ord("A"));
 	key_right = keyboard_check(ord("D"));
-	key_jump = keyboard_check_pressed(vk_space);
+	key_jump = keyboard_check(vk_space);
 } else {
 	key_left = 0;
 	key_right = 0;
@@ -26,11 +26,17 @@ if (hasControl) {
 // Calculate movement
 // ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 var move = key_right - key_left;
-hSpeed = move * walkSpeed;
+if (canStop) hSpeed = move * walkSpeed;
+
 vSpeed = vSpeed + grav;
 
-if (key_jump) && (place_meeting(x, y+1, oWall)) {
-	vSpeed = -12;
+jumpBuffer--;
+if (key_jump) && (canJump) && (jumpBuffer < jumpBufferLimit) {
+	canJump = 0;
+	vSpeed = jumpSpeedCurrent;
+	
+	// consecutive jumps are bigger
+	if (jumpSpeedCurrent > jumpSpeedMax) jumpSpeedCurrent *= 1.2;
 }
 
 
@@ -65,6 +71,11 @@ if (!place_meeting(x, y+1, oWall)) {
 	
 // player is on the ground
 } else {
+	jumpBuffer = jumpBufferLimit;
+	
+	if (sprite_index == sPlayerRun) && (image_index > 0) && (image_index < 4) canJump = true;
+	else canJump = false;
+	
 	// spawn dust
 	if (sprite_index == sPlayerAir) || ((sprite_index == sPlayerRun) && (image_index == 1)) {
 		repeat(5) {
@@ -77,6 +88,7 @@ if (!place_meeting(x, y+1, oWall)) {
 		sprite_index = sPlayer;
 	} else {
 		sprite_index = sPlayerRun;
+		canStop = false;
 	}
 }
 
