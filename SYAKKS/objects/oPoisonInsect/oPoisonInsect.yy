@@ -5,7 +5,10 @@
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "sPoisonInsect",
+    "path": "sprites/sPoisonInsect/sPoisonInsect.yy",
+  },
   "persistent": false,
   "parentObjectId": {
     "name": "oEnemy",

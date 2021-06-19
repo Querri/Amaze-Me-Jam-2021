@@ -5,7 +5,10 @@
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "sMushyExplode",
+    "path": "sprites/sMushyExplode/sMushyExplode.yy",
+  },
   "persistent": false,
   "parentObjectId": {
     "name": "oEnemy",
