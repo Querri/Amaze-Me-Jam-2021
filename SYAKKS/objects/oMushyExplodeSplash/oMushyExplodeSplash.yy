@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sMushyExplode",
-    "path": "sprites/sMushyExplode/sMushyExplode.yy",
+    "name": "sMushyExplodeSplash",
+    "path": "sprites/sMushyExplodeSplash/sMushyExplodeSplash.yy",
   },
   "solid": false,
   "visible": true,
@@ -10,10 +10,7 @@
     "path": "sprites/sMushyExplode/sMushyExplode.yy",
   },
   "persistent": false,
-  "parentObjectId": {
-    "name": "oEnemy",
-    "path": "objects/oEnemy/oEnemy.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -27,8 +24,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [
@@ -41,7 +38,7 @@
     "path": "folders/Objects/Enemies.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oMushyExplode",
+  "name": "oMushyExplodeSplash",
   "tags": [],
   "resourceType": "GMObject",
 }

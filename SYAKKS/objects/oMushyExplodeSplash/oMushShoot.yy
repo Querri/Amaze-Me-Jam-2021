@@ -1,14 +1,11 @@
 {
   "spriteId": {
-    "name": "sMushyExplode",
-    "path": "sprites/sMushyExplode/sMushyExplode.yy",
+    "name": "sSpikySpikes",
+    "path": "sprites/sSpikySpikes/sSpikySpikes.yy",
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": {
-    "name": "sMushyExplode",
-    "path": "sprites/sMushyExplode/sMushyExplode.yy",
-  },
+  "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
     "name": "oEnemy",
@@ -26,10 +23,7 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [
     {"propertyId":{"name":"canMove","path":"objects/oEnemy/oEnemy.yy",},"objectId":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"value":"0","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
@@ -41,7 +35,7 @@
     "path": "folders/Objects/Enemies.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oMushyExplode",
+  "name": "oMushShoot",
   "tags": [],
   "resourceType": "GMObject",
 }
