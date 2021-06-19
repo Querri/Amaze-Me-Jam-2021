@@ -17,6 +17,7 @@
     {"id":{"name":"sBgMushy2","path":"sprites/sBgMushy2/sBgMushy2.yy",},"order":10,},
     {"id":{"name":"sBulletSplash","path":"sprites/sBulletSplash/sBulletSplash.yy",},"order":16,},
     {"id":{"name":"oPoisonInsect","path":"objects/oPoisonInsect/oPoisonInsect.yy",},"order":3,},
+    {"id":{"name":"sWallVisible","path":"sprites/sWallVisible/sWallVisible.yy",},"order":16,},
     {"id":{"name":"sTilesRocky","path":"sprites/sTilesRocky/sTilesRocky.yy",},"order":1,},
     {"id":{"name":"sTrigger","path":"sprites/sTrigger/sTrigger.yy",},"order":9,},
     {"id":{"name":"sRocks8","path":"sprites/sRocks8/sRocks8.yy",},"order":7,},
@@ -107,9 +108,9 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"rMushy","path":"rooms/rMushy/rMushy.yy",},},
     {"roomId":{"name":"rMenu","path":"rooms/rMenu/rMenu.yy",},},
     {"roomId":{"name":"rRocky","path":"rooms/rRocky/rRocky.yy",},},
+    {"roomId":{"name":"rMushy","path":"rooms/rMushy/rMushy.yy",},},
     {"roomId":{"name":"rSpiky","path":"rooms/rSpiky/rSpiky.yy",},},
     {"roomId":{"name":"rPoisonous","path":"rooms/rPoisonous/rPoisonous.yy",},},
     {"roomId":{"name":"rCredits","path":"rooms/rCredits/rCredits.yy",},},
