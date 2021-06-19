@@ -29,7 +29,9 @@ var move = key_right - key_left;
 hSpeed = move * walkSpeed;
 vSpeed = vSpeed + grav;
 
-if (key_jump) && (place_meeting(x, y+1, oWall)) {
+canJump--;
+if (key_jump) && (canJump > 0) {
+	canJump = 0;
 	vSpeed = -12;
 }
 
@@ -65,6 +67,8 @@ if (!place_meeting(x, y+1, oWall)) {
 	
 // player is on the ground
 } else {
+	canJump = 10;
+	
 	// spawn dust
 	if (sprite_index == sPlayerAir) || ((sprite_index == sPlayerRun) && (image_index == 1)) {
 		repeat(5) {
