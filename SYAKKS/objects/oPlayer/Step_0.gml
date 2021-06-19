@@ -6,7 +6,7 @@
 if (hasControl) {
 	key_left = keyboard_check(ord("A"));
 	key_right = keyboard_check(ord("D"));
-	key_jump = keyboard_check_pressed(vk_space);
+	key_jump = keyboard_check(vk_space);
 } else {
 	key_left = 0;
 	key_right = 0;
@@ -29,10 +29,13 @@ var move = key_right - key_left;
 hSpeed = move * walkSpeed;
 vSpeed = vSpeed + grav;
 
-canJump--;
-if (key_jump) && (canJump > 0) {
+jumpBuffer--;
+if (key_jump) && (canJump) && (jumpBuffer < jumpBufferLimit) {
 	canJump = 0;
-	vSpeed = -12;
+	vSpeed = jumpSpeedCurrent;
+	
+	if (hSpeed < walkSpeed) jumpSpeedCurrent = jumpSpeedBase;
+	else if (jumpSpeedCurrent > jumpSpeedMax) jumpSpeedCurrent *= 1.2;
 }
 
 
@@ -67,7 +70,10 @@ if (!place_meeting(x, y+1, oWall)) {
 	
 // player is on the ground
 } else {
-	canJump = 10;
+	jumpBuffer = jumpBufferLimit;
+	
+	if (sprite_index == sPlayerRun) && (image_index > 0) && (image_index < 4) canJump = true;
+	else canJump = false;
 	
 	// spawn dust
 	if (sprite_index == sPlayerAir) || ((sprite_index == sPlayerRun) && (image_index == 1)) {
