@@ -78,7 +78,7 @@ if (!place_meeting(x, y+1, oWall)) {
 	
 	// spawn dust
 	if (sprite_index == sPlayerAir) || ((sprite_index == sPlayerRun) && (image_index == 1)) {
-		repeat(5) {
+		repeat(3) {
 			instance_create_layer(x + sign(hSpeed) * 4, bbox_bottom, "Dust", dustObject);
 		}
 	}

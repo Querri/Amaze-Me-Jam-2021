@@ -5,12 +5,14 @@
 vSpeed = vSpeed + grav;
 
 if (attackDelayLeft > 0) attackDelayLeft--;
+if (sinceDirectionChange > 0) sinceDirectionChange--;
 
 // Horizontal collision
 // ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 if (canMove) {
-	if (place_meeting(x+hSpeed, y, oWall)) 
-	|| (place_meeting(x+hSpeed, y, oPatrolStop)) {
+	if (sinceDirectionChange < 1) && 
+	((place_meeting(x+hSpeed, y, oWall)) || (place_meeting(x+hSpeed, y, oPatrolStop))) {
+		sinceDirectionChange = stunDelay;
 		hSpeed = -hSpeed;
 	} else x = x + hSpeed;
 } else if (didHit) {
