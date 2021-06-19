@@ -29,3 +29,24 @@ if (shake_remain > 0) {
 // Update camera view
 // ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 camera_set_view_pos(cam, x-viewXHalf, y-viewYHalf);
+
+
+
+// Parallax background
+// ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+// x = doesn't move
+// 0 = moves with camera
+
+// small divider = far
+// big divider = close
+if (layer_exists(bgLayer1)) {
+	layer_x(bgLayer1, x/2);
+}
+
+if (layer_exists(bgLayer2)) {
+	layer_x(bgLayer2, x/4);
+}
+
+if (layer_exists(bgLayer3)) {
+	layer_x(bgLayer3, x/7);
+}
