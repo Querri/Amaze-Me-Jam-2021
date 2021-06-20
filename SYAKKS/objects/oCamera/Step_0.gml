@@ -23,8 +23,8 @@ if (instance_exists(camFollow)) {
 
 // Update position
 // ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-x += (xTo - x) / 20;
-y += (yTo - y) / 20;
+x += (xTo - x) / 10;
+y += (yTo - y) / 10;
 
 // Keep camera inside room
 x = clamp(x, viewXHalf, room_width - viewXHalf - shake_buffer);
