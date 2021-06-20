@@ -12,7 +12,7 @@ if (menu_control) {
 	} else if (keyboard_check_pressed(ord("S"))) || (keyboard_check_pressed(vk_down)) {
 		menu_cursor--;
 		if (menu_cursor < 0) menu_cursor = menu_items-1;
-	} else if (keyboard_check_pressed(vk_enter)) {
+	} else if (keyboard_check_pressed(vk_enter)) || (keyboard_check_pressed(vk_space)) {
 		menu_x_target = gui_width + 400;
 		menu_committed = menu_cursor;
 		menu_control = false;

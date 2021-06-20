@@ -12,10 +12,6 @@ enum LOCATION {
 	AIR
 }
 
-enum FACING {
-	RIGHT,
-	LEFT
-}
 
 enum ANIMATION {
 	IDLE,
@@ -30,15 +26,22 @@ enum ANIMATION {
 
 state = STATE.NORMAL;
 location = LOCATION.GROUND;
-facing = FACING.RIGHT;
 animation = ANIMATION.IDLE;
 
 spriteDirection = 1;
 hDirection = 1;
-walkSpeed = 3;
+
+walkSpeed = 4;
+walkSpeedMin = 2;
+walkSpeedMax = 8;
+
+runSpeedMin = 5;
 runSpeed = 10;
-standJumpSpeed = -10;
-walkJumpSpeed = -15;
+runSpeedMax = 15;
+
+standJumpSpeed = -5;
+walkJumpSpeed = -14;
 runJumpSpeed = -20;
 
 itemsCollected = 0;
+ 
