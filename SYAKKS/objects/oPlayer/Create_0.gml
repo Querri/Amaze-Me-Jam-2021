@@ -32,10 +32,8 @@ spriteDirection = 1;
 hDirection = 1;
 
 walkSpeed = 4;
-walkSpeedMin = 2;
 walkSpeedMax = 8;
 
-runSpeedMin = 5;
 runSpeed = 10;
 runSpeedMax = 15;
 

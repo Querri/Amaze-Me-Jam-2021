@@ -7,7 +7,7 @@ spd = SPEED.STILL;
 animation = ANIMATION.IDLE;
 */
 var previousAnimation = animation;
-jumpBuffer--;
+jumpBufferLeft--;
 
 // Get input
 // ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -27,6 +27,8 @@ if (state = STATE.NORMAL) {
 
 hDirection = key_right - key_left;
 
+
+
 // ??????
 // ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 switch(location) {
@@ -37,6 +39,7 @@ switch(location) {
 					if (hDirection == 0) || (hDirection == spriteDirection) {
 						animation = ANIMATION.JUMP;
 						vSpeed = standJumpSpeed;
+						jumpBufferLeft = 0;
 					}
 				} else {
 					if (hDirection != 0) {
@@ -55,6 +58,7 @@ switch(location) {
 						if (hDirection == 0) || (hDirection == spriteDirection) {
 							animation = ANIMATION.JUMP;
 							vSpeed = walkJumpSpeed;
+						jumpBufferLeft = 0;
 						}
 					} else {
 						if (hDirection == spriteDirection) {
@@ -72,10 +76,29 @@ switch(location) {
 						if (hDirection == 0) || (hDirection == spriteDirection) {
 							animation = ANIMATION.JUMP;
 							vSpeed = runJumpSpeed;
+							jumpBufferLeft = 0;
 						}
 					} else {
 						if (hDirection == 0) || (hDirection != spriteDirection) {
-							animation = ANIMATION.WALK;
+							animation = ANIMATION.STOP;
+						}
+					}
+				}
+				break;
+			}
+			case (ANIMATION.STOP): {
+				if (image_index == 0) || (image_index >= image_number-1) {
+					if (key_jump) {
+						if (hDirection == 0) || (hDirection == spriteDirection) {
+							animation = ANIMATION.JUMP;
+							vSpeed = walkJumpSpeed;
+						jumpBufferLeft = 0;
+						}
+					} else {
+						if (hDirection == spriteDirection) {
+							animation = ANIMATION.RUN;
+						} else {
+							animation = ANIMATION.IDLE;
 						}
 					}
 				}
@@ -103,6 +126,22 @@ switch(location) {
 	}
 	case (LOCATION.AIR): {
 		switch(animation) {
+			case(ANIMATION.WALK):{
+				if (key_jump) && (jumpBufferLeft > 0) {
+					animation = ANIMATION.JUMP;
+					vSpeed = walkJumpSpeed;
+					jumpBufferLeft = 0;
+				}
+				break;
+			}
+			case(ANIMATION.RUN): {
+				if (key_jump) && (jumpBufferLeft > 0) {
+					animation = ANIMATION.JUMP;
+					vSpeed = runJumpSpeed;
+					jumpBufferLeft = 0;
+				}
+				break;
+			}
 			case(ANIMATION.JUMP): {
 				if  (image_index >= image_number-1) {
 					animation = ANIMATION.FALL;
@@ -123,7 +162,7 @@ vSpeed += grav;
 if (place_meeting(x, y + vSpeed, oWall)) {
 	location = LOCATION.GROUND;
 	vSpeed = 0;
-	
+	jumpBufferLeft = jumpBuffer;
 } else {
 	location = LOCATION.AIR;
 	if (spriteDirection == 1) {
@@ -187,6 +226,13 @@ if (animation != previousAnimation) {
 		case (ANIMATION.RUN): {
 			sprite_index = sPlayerRun;
 			image_speed = 1;
+			image_index = 0;
+			hSpeed = runSpeed * spriteDirection;
+			break;
+		}
+		case (ANIMATION.STOP): {
+			sprite_index = sPlayerWalk;
+			image_speed = 2;
 			image_index = 0;
 			hSpeed = runSpeed * spriteDirection;
 			break;

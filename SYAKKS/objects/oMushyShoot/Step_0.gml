@@ -15,13 +15,12 @@ if (instance_exists(oPlayer)) {
 			image_index = 0;
 			image_speed = 1;	
 		} else if (shootCountdown == shootCountdownRate-20) {
-			with (instance_create_layer(x, y, "Bullets", oBullet)) {
+			with (instance_create_layer(x, y, bulletLayer, oBullet)) {
 				speed = bulletSpeed;
 				direction = other.image_angle + random_range(-bulletSpread, bulletSpread);
 				image_angle = direction;
 			}
 		}
-		
 	} else {
 		sprite_index = sMushyShoot;
 	}

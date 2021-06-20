@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Decor",
-    "path": "folders/Sprites/Decor.yy",
+    "name": "Spiky",
+    "path": "folders/Sprites/Decor/Spiky.yy",
   },
   "resourceVersion": "1.0",
   "name": "sVines4",
