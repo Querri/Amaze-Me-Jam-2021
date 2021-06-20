@@ -28,11 +28,10 @@ if (state = STATE.NORMAL) {
 
 // Move and animate
 // ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
 var previousAnimation = animation;
 hDirection = key_right - key_left;
 
-/*
+
 if (place_meeting(x, y + vSpeed, oWall)) {  // on ground
 	jumpBufferLeft = jumpBuffer;
 	vSpeed = 0;
@@ -145,7 +144,7 @@ if (place_meeting(x, y + vSpeed, oWall)) {  // on ground
 				case(ANIMATION.JUMP):
 				case(ANIMATION.FLOAT):
 				case(ANIMATION.FALL): {
-					if (hSpeed < runSpeed) {
+					if (hSpeed/hDirection < walkSpeed) {
 						animation = ANIMATION.WALK;
 						hSpeed = hDirection * walkSpeed;
 					} else {
@@ -159,18 +158,31 @@ if (place_meeting(x, y + vSpeed, oWall)) {  // on ground
 	}
 } else {  // in air
 	vSpeed = vSpeed + grav;
+	hSpeed = hDirection * runSpeed;
 	
-	if (vSpeed > -3) && (vSpeed < 3) {
-		animation = ANIMATION.FLOAT;
-	} else if (vSpeed >= 3) {
-		animation = ANIMATION.FALL;
+	switch (animation) {
+		default: {
+			if (vSpeed > -5) && (vSpeed < 5) {
+				animation = ANIMATION.FLOAT;
+			}
+			break;
+		}
+		case(ANIMATION.FLOAT): {
+			if (vSpeed >= -5) {
+				animation = ANIMATION.FALL;
+			}
+			break;
+		}
+		case (ANIMATION.FALL): {
+			break;
+		}
 	}
-}*/
+}
 
 
 
 
-
+/*
 if (place_meeting(x, y + vSpeed, oWall)) {  // on ground
 	jumpBufferLeft = jumpBuffer;
 	vSpeed = 0;
@@ -248,7 +260,7 @@ if (place_meeting(x, y + vSpeed, oWall)) {  // on ground
 		animation = ANIMATION.FALL;
 	}
 }
-
+*/
 
 x = x + hSpeed;
 y = y + vSpeed;
@@ -273,7 +285,7 @@ if (animation != previousAnimation) {
 		}
 		case (ANIMATION.WALK): {
 			sprite_index = sPlayerWalk;
-			image_speed = 0.6;
+			image_speed = 1;
 			image_index = 0;
 			break;
 		}
