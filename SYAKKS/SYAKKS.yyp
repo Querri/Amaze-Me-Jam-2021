@@ -127,11 +127,11 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"rRocky","path":"rooms/rRocky/rRocky.yy",},},
     {"roomId":{"name":"rSpiky","path":"rooms/rSpiky/rSpiky.yy",},},
     {"roomId":{"name":"rPoisonous","path":"rooms/rPoisonous/rPoisonous.yy",},},
     {"roomId":{"name":"rMushy","path":"rooms/rMushy/rMushy.yy",},},
     {"roomId":{"name":"rMenu","path":"rooms/rMenu/rMenu.yy",},},
-    {"roomId":{"name":"rRocky","path":"rooms/rRocky/rRocky.yy",},},
     {"roomId":{"name":"rCredits","path":"rooms/rCredits/rCredits.yy",},},
     {"roomId":{"name":"rEmpty","path":"rooms/rEmpty/rEmpty.yy",},},
     {"roomId":{"name":"rTesting","path":"rooms/rTesting/rTesting.yy",},},
