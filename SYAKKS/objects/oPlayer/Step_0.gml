@@ -54,22 +54,6 @@ if (place_meeting(x, y + vSpeed, oWall)) {  // on ground
 				break;
 			}
 		}
-	} else if (key_interact) {  // interact
-		switch(animation) {
-			
-			case(ANIMATION.WALK):
-			case(ANIMATION.STOP):
-			case(ANIMATION.IDLE): {
-				if (place_meeting(x, y + vSpeed, oPick)) {
-					animation = ANIMATION.INTERACT;
-					itemsCollected += 1;
-					hSpeed = 0;
-				} else if (place_meeting(x, y + vSpeed, oLevelEnd)) {
-					animation = ANIMATION.INTERACT;
-					hSpeed = 0;
-				}
-			}
-		}
 	} else {
 		if (hDirection == 0) || (hDirection != spriteDirection) {  // go slower
 			switch(animation) {
@@ -183,86 +167,6 @@ if (place_meeting(x, y + vSpeed, oWall)) {  // on ground
 
 
 
-/*
-if (place_meeting(x, y + vSpeed, oWall)) {  // on ground
-	jumpBufferLeft = jumpBuffer;
-	vSpeed = 0;
-	
-	if (key_jump) && (jumpBufferLeft > 0) {  // jump
-		if (animation == ANIMATION.IDLE) {
-			animation = ANIMATION.JUMP;
-			vSpeed = standJumpSpeed;
-		} else if (animation == ANIMATION.WALK || animation == ANIMATION.STOP) {
-			animation = ANIMATION.JUMP;
-			vSpeed = walkJumpSpeed;
-		} else if (animation == ANIMATION.RUN) {
-			animation = ANIMATION.JUMP;
-			vSpeed = runJumpSpeed;
-		}
-	} else if (key_interact) && ((animation == ANIMATION.IDLE)) {  // interact
-		animation = ANIMATION.INTERACT;
-		hSpeed = 0;
-	} else {  // be on ground
-		if (hDirection == 0) || (hDirection != spriteDirection) {  // go slower
-			if (animation == ANIMATION.IDLE) && (hDirection != 0) {
-				animation = ANIMATION.TURN;
-				hSpeed = 0;
-			} else if (animation == ANIMATION.WALK) && (image_index >= image_number - 1) {
-				animation = ANIMATION.IDLE;
-				hSpeed = 0;
-			} else if (animation == ANIMATION.RUN) && (image_index < 2) {
-				animation = ANIMATION.STOP;
-				hSpeed = 1;
-			} else if (animation == ANIMATION.STOP) && (image_index >= image_number - 1)  {
-				animation = ANIMATION.IDLE;
-				hSpeed = 0;
-			} else if (animation == ANIMATION.TURN) && (image_index == 1) {
-				animation = ANIMATION.IDLE;
-				hSpeed = 0;
-			} else if (animation == ANIMATION.INTERACT) && (image_index >= image_number - 1)  {
-				animation = ANIMATION.IDLE;
-				hSpeed = 0;
-			} else if (animation == ANIMATION.FLOAT) || (animation == ANIMATION.FALL) {
-				if (hSpeed < runSpeed) {
-					animation = ANIMATION.IDLE;
-					hSpeed = 0;
-				} else {
-					animation = ANIMATION.STOP;
-					hSpeed = 1;
-				}
-			}
-		} else {  // go faster
-			if  (animation == ANIMATION.IDLE) {
-				animation = ANIMATION.WALK;
-				hSpeed = hDirection * walkSpeed;
-			} else if (animation == ANIMATION.WALK) && (image_index >= image_number - 1) {
-				animation = ANIMATION.RUN;
-				hSpeed = hDirection * runSpeed;
-			} else if (animation == ANIMATION.TURN) && (image_index == 1) {
-				animation = ANIMATION.WALK;
-				hSpeed = hDirection * walkSpeed;
-			} else if (animation == ANIMATION.FLOAT) || (animation == ANIMATION.FALL) {
-				if (hSpeed < runSpeed) {
-					animation = ANIMATION.WALK;
-					hSpeed = hDirection * walkSpeed;
-				} else {
-					animation = ANIMATION.RUN;
-					hSpeed = hDirection * runSpeed;
-				}
-			}
-		}
-	}
-} else {  // in air
-	vSpeed = vSpeed + grav;
-	
-	if (vSpeed > -3) && (vSpeed < 3) {
-		animation = ANIMATION.FLOAT;
-	} else if (vSpeed >= 3) {
-		animation = ANIMATION.FALL;
-	}
-}
-*/
-
 x = x + hSpeed;
 y = y + vSpeed;
 
@@ -298,12 +202,6 @@ if (animation != previousAnimation) {
 		}
 		case (ANIMATION.STOP): {
 			sprite_index = sPlayerStop;
-			image_speed = 1;
-			image_index = 0;
-			break;
-		}
-		case (ANIMATION.INTERACT): {
-			sprite_index = sMushyExplode;
 			image_speed = 1;
 			image_index = 0;
 			break;

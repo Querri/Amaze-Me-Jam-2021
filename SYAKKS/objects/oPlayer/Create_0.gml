@@ -23,7 +23,6 @@ enum ANIMATION {
 	WALK,
 	RUN,
 	STOP,
-	INTERACT,
 	JUMP,
 	FLOAT,
 	FALL,
