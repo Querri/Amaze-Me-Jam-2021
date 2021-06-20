@@ -62,6 +62,7 @@ if (place_meeting(x, y + vSpeed, oWall)) {  // on ground
 			case(ANIMATION.IDLE): {
 				if (place_meeting(x, y + vSpeed, oPick)) {
 					animation = ANIMATION.INTERACT;
+					itemsCollected += 1;
 					hSpeed = 0;
 				} else if (place_meeting(x, y + vSpeed, oLevelEnd)) {
 					animation = ANIMATION.INTERACT;
