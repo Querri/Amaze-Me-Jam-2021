@@ -23,7 +23,6 @@ enum ANIMATION {
 	WALK,
 	RUN,
 	STOP,
-	INTERACT,
 	JUMP,
 	FLOAT,
 	FALL,
@@ -41,3 +40,5 @@ runSpeed = 10;
 standJumpSpeed = -10;
 walkJumpSpeed = -15;
 runJumpSpeed = -20;
+
+itemsCollected = 0;

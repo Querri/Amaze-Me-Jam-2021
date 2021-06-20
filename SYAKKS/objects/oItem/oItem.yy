@@ -1,19 +1,16 @@
 {
   "spriteId": {
-    "name": "sPickSpecimen",
-    "path": "sprites/sPickSpecimen/sPickSpecimen.yy",
+    "name": "sItem",
+    "path": "sprites/sItem/sItem.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "sPickHeart",
-    "path": "sprites/sPickHeart/sPickHeart.yy",
+    "name": "sHeart",
+    "path": "sprites/sHeart/sHeart.yy",
   },
   "persistent": false,
-  "parentObjectId": {
-    "name": "oPick",
-    "path": "objects/oPick/oPick.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -26,7 +23,9 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -34,7 +33,7 @@
     "path": "folders/Objects/Pickups.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oPickSpecimen",
+  "name": "oItem",
   "tags": [],
   "resourceType": "GMObject",
 }

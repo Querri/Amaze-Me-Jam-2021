@@ -1,10 +1,13 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "sHeart",
+    "path": "sprites/sHeart/sHeart.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "sPickHeart",
-    "path": "sprites/sPickHeart/sPickHeart.yy",
+    "name": "sHeart",
+    "path": "sprites/sHeart/sHeart.yy",
   },
   "persistent": false,
   "parentObjectId": null,
@@ -20,7 +23,9 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -28,7 +33,7 @@
     "path": "folders/Objects/Pickups.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oPick",
+  "name": "oHeart",
   "tags": [],
   "resourceType": "GMObject",
 }
