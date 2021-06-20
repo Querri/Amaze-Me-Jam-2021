@@ -7,7 +7,6 @@ spd = SPEED.STILL;
 animation = ANIMATION.IDLE;
 */
 var previousAnimation = animation;
-var speedState = 0;
 jumpBuffer--;
 
 // Get input
@@ -142,10 +141,11 @@ if (place_meeting(x, y + vSpeed, oWall)) {
 	}
 }
 
-if (place_meeting(x + hSpeed, y, oWall)) {
+if (place_meeting(x + hSpeed, y, oWall)) || (place_meeting(x + (hDirection * 5), y, oWall)) {
 	switch(animation) {
+		case(ANIMATION.WALK):
 		case(ANIMATION.RUN): {
-			animation = ANIMATION.WALK;
+			animation = ANIMATION.IDLE;
 			break;
 		}
 	}

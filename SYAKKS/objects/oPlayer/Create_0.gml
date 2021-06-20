@@ -39,9 +39,9 @@ runSpeedMin = 5;
 runSpeed = 10;
 runSpeedMax = 15;
 
-standJumpSpeed = -5;
-walkJumpSpeed = -14;
-runJumpSpeed = -20;
+standJumpSpeed = -15;
+walkJumpSpeed = -20;
+runJumpSpeed = -25;
 
 itemsCollected = 0;
  
