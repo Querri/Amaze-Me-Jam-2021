@@ -54,9 +54,21 @@ if (place_meeting(x, y + vSpeed, oWall)) {  // on ground
 				break;
 			}
 		}
-	} else if (key_interact) && ((animation == ANIMATION.IDLE)) {  // interact
-		animation = ANIMATION.INTERACT;
-		hSpeed = 0;
+	} else if (key_interact) {  // interact
+		switch(animation) {
+			
+			case(ANIMATION.WALK):
+			case(ANIMATION.STOP):
+			case(ANIMATION.IDLE): {
+				if (place_meeting(x, y + vSpeed, oPick)) {
+					animation = ANIMATION.INTERACT;
+					hSpeed = 0;
+				} else if (place_meeting(x, y + vSpeed, oLevelEnd)) {
+					animation = ANIMATION.INTERACT;
+					hSpeed = 0;
+				}
+			}
+		}
 	} else {
 		if (hDirection == 0) || (hDirection != spriteDirection) {  // go slower
 			switch(animation) {
@@ -67,6 +79,8 @@ if (place_meeting(x, y + vSpeed, oWall)) {  // on ground
 						}
 					break;
 				}
+				case(ANIMATION.INTERACT):
+				case(ANIMATION.STOP):
 				case(ANIMATION.WALK): {
 					if (image_index >= image_number - 1) {
 						animation = ANIMATION.IDLE;
@@ -81,22 +95,8 @@ if (place_meeting(x, y + vSpeed, oWall)) {  // on ground
 					}
 					break;
 				}
-				case(ANIMATION.STOP): {
-					if (image_index >= image_number - 1)  {
-						animation = ANIMATION.IDLE;
-						hSpeed = 0;
-					}
-					break;
-				}
 				case(ANIMATION.TURN): {
 					if (image_index == 1) {
-						animation = ANIMATION.IDLE;
-						hSpeed = 0;
-					}
-					break;
-				}
-				case(ANIMATION.INTERACT): {
-					if (image_index >= image_number - 1)  {
 						animation = ANIMATION.IDLE;
 						hSpeed = 0;
 					}
