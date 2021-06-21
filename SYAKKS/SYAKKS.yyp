@@ -93,7 +93,6 @@
     {"id":{"name":"sShadow1","path":"sprites/sShadow1/sShadow1.yy",},"order":8,},
     {"id":{"name":"sText5","path":"sprites/sText5/sText5.yy",},"order":12,},
     {"id":{"name":"sItemRocky","path":"sprites/sItemRocky/sItemRocky.yy",},"order":3,},
-    {"id":{"name":"oLightPlayer","path":"objects/oLightPlayer/oLightPlayer.yy",},"order":0,},
     {"id":{"name":"sRocks5","path":"sprites/sRocks5/sRocks5.yy",},"order":4,},
     {"id":{"name":"sPlayerFall","path":"sprites/sPlayerFall/sPlayerFall.yy",},"order":11,},
     {"id":{"name":"oPoisonInsectSplash","path":"objects/oPoisonInsectSplash/oPoisonInsectSplash.yy",},"order":11,},
