@@ -13,9 +13,10 @@ menu_itemheight = font_get_size(fMenu);
 menu_committed = -1;
 menu_control = true;
 
-menu[2] = "START GAME";
-menu[1] = "LEVEL SELECT";
-menu[0] = "";
+menu[3] = "LEVEL 1: ROCKY WORLD";
+menu[2] = "LEVEL 2: POISONOUS WORLD";
+menu[1] = "LEVEL 3: SPIKY WORLD";
+menu[0] = "LEVEL 4: TBA";
 
 menu_items = array_length_1d(menu);
-menu_cursor = 2;
+menu_cursor = 3;
