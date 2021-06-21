@@ -20,7 +20,7 @@ var _itemsCollected = oPlayer.itemsCollected;
 for (var i = 1; i <= itemsAvailable; i++) {
 	var iconState = 1;
 	if (i <= _itemsCollected) iconState = 0;
-	else if (i >= itemsNeeded) iconState = 2;
+	else if (i > itemsNeeded) iconState = 2;
 	
 	draw_sprite(
 		itemIcon, 
