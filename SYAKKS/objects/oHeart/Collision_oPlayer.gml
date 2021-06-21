@@ -1,4 +1,4 @@
-/// @desc inclrease picked items by one
+/// @desc increase picked items by one
 
 with(oPlayer) {
 	if (hp < hpMax) {
@@ -6,3 +6,5 @@ with(oPlayer) {
 		instance_destroy(other);
 	}
 }
+
+audio_play_sound(sndHeart, 1, false);

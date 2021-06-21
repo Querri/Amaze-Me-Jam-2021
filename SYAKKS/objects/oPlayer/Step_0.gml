@@ -112,6 +112,7 @@ switch(location) {
 			}
 			case(ANIMATION.FALL):
 			case(ANIMATION.JUMP): {
+				audio_play_sound(sndLand, 2, false);
 				if (hSpeed > walkSpeed) {
 					animation = ANIMATION.RUN;
 				} else if (hSpeed > 0) {
