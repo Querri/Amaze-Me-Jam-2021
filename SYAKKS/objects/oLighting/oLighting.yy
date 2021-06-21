@@ -23,6 +23,9 @@
   ],
   "properties": [
     {"varType":0,"value":"0.6","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"darkness","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":7,"value":"$FF004CE5","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"darknessColor","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":7,"value":"$FF1E9930","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"playerLightColor","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":7,"value":"$FFFFFFFF","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"pickupLightColor","tags":[],"resourceType":"GMObjectProperty",},
   ],
   "overriddenProperties": [],
   "parent": {

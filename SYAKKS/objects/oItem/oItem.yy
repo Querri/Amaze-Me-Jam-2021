@@ -1,13 +1,13 @@
 {
   "spriteId": {
-    "name": "sItem",
-    "path": "sprites/sItem/sItem.yy",
+    "name": "sItemPoison",
+    "path": "sprites/sItemPoison/sItemPoison.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "sHeartIcon",
-    "path": "sprites/sHeartIcon/sHeartIcon.yy",
+    "name": "sIconHeart",
+    "path": "sprites/sIconHeart/sIconHeart.yy",
   },
   "persistent": false,
   "parentObjectId": null,
