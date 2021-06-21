@@ -14,8 +14,8 @@ menu_committed = -1;
 menu_control = true;
 
 menu[2] = "START GAME";
-menu[1] = "LEVEL SELECT";
-menu[0] = "OPTIONS";
+menu[1] = "";
+menu[0] = "";
 
 menu_items = array_length_1d(menu);
 menu_cursor = 2;
