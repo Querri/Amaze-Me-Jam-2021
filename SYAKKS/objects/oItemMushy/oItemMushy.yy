@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "sIconMushy",
+    "path": "sprites/sIconMushy/sIconMushy.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": {
@@ -7,7 +10,10 @@
     "path": "sprites/sIconHeart/sIconHeart.yy",
   },
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "oItem",
+    "path": "objects/oItem/oItem.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -30,7 +36,7 @@
     "path": "folders/Objects/Pickups.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oItem",
+  "name": "oItemMushy",
   "tags": [],
   "resourceType": "GMObject",
 }

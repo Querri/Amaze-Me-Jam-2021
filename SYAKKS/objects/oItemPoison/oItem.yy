@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "sIconRocky",
+    "path": "sprites/sIconRocky/sIconRocky.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": {

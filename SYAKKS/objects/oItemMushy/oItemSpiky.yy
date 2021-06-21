@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "sIconRocky",
+    "path": "sprites/sIconRocky/sIconRocky.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": {
@@ -30,7 +33,7 @@
     "path": "folders/Objects/Pickups.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oItem",
+  "name": "oItemSpiky",
   "tags": [],
   "resourceType": "GMObject",
 }
