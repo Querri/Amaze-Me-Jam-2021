@@ -6,8 +6,8 @@
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "sHeart",
-    "path": "sprites/sHeart/sHeart.yy",
+    "name": "sHeartIcon",
+    "path": "sprites/sHeartIcon/sHeartIcon.yy",
   },
   "persistent": false,
   "parentObjectId": null,
