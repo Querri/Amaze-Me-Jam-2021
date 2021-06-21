@@ -1,8 +1,6 @@
-/// @desc Move to next world
+/// @desc move to next world
 
-with(oPlayer) {
-	if (hasControl) {
-		hasControl = false;
-		SlideTransition(TRANS_MODE.NEXT);
-	}
+if (oPlayer.itemsCollected >= itemsNeeded) {
+	SlideTransition(TRANS_MODE.NEXT);
 }
+

@@ -1,3 +1,2 @@
-/// @desc 
+/// @desc automatically switch some animations
 
-canStop = true;

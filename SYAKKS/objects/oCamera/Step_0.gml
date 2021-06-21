@@ -1,17 +1,30 @@
 /// @desc Update camera
 
+
 // Update destination
 // ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 if (instance_exists(camFollow)) {
+	yTo = camFollow.y - followYOffset;
 	xTo = camFollow.x;
-	yTo = camFollow.y;
+	
+	if (oPlayer.spriteDirection == 1) {
+		xTo += followYOffset;
+	} else {
+		xTo -= followYOffset;
+	}
+	
+	if (keyboard_check(ord("W"))) {
+		yTo -= cam_look_amount;
+	} else if (keyboard_check(ord("S"))) {
+		yTo += cam_look_amount;
+	}
 }
 
 
 // Update position
 // ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-x += (xTo - x) / 25;
-y += (yTo - y) / 25;
+x += (xTo - x) / 10;
+y += (yTo - y) / 10;
 
 // Keep camera inside room
 x = clamp(x, viewXHalf, room_width - viewXHalf - shake_buffer);
