@@ -9,3 +9,4 @@ with (oPlayer) {
 }
 
 ScreenShake(10, 20);
+audio_play_sound(sndHit, 1, false);

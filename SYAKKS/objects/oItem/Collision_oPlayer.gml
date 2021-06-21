@@ -4,3 +4,5 @@ with(oPlayer) {
 	itemsCollected++;
 	instance_destroy(other);
 }
+
+audio_play_sound(sndItem, 1, false);

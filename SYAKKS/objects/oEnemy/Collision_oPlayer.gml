@@ -17,5 +17,6 @@ if (attackDelayLeft <= 0) {
 		stunDelay = 20;
 	}
 	ScreenShake(10, 20);
+	audio_play_sound(sndHit, 1, false);
 }
 
