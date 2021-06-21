@@ -112,13 +112,16 @@ switch(location) {
 			}
 			case(ANIMATION.FALL):
 			case(ANIMATION.JUMP): {
-				audio_play_sound(sndLand, 2, false);
 				if (hSpeed > walkSpeed) {
 					animation = ANIMATION.RUN;
 				} else if (hSpeed > 0) {
 					animation = ANIMATION.WALK;
 				} else {
 					animation = ANIMATION.IDLE;
+				}
+				audio_play_sound(sndLand, 2, false);
+				repeat(3) {
+					instance_create_layer(x + sign(hSpeed) * 4, bbox_bottom, "Dust", dustObject);
 				}
 				break;
 			}
