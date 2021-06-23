@@ -23,7 +23,7 @@ if (menu_control) {
 if (menu_x > gui_width + 250) && (menu_committed != -1) {
 	switch(menu_committed) {
 		case 2: {
-			SlideTransition(TRANS_MODE.GOTO, rRocky); 
+			SlideTransition(TRANS_MODE.NEXT); 
 			break;
 		}
 		case 1: {

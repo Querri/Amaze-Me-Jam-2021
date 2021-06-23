@@ -163,7 +163,7 @@ switch(location) {
 vSpeed += grav;
 
 // check collisions
-if (place_meeting(x, y + vSpeed, oWall)) {
+if (TilePlaceMeeting(x, y + vSpeed, collisionLayer)) {
 	location = LOCATION.GROUND;
 	vSpeed = 0;
 	jumpBufferLeft = jumpBuffer;
@@ -184,7 +184,7 @@ if (place_meeting(x, y + vSpeed, oWall)) {
 	}
 }
 
-if (place_meeting(x + hSpeed, y, oWall)) || (place_meeting(x + (hDirection * 5), y, oWall)) {
+if (TilePlaceMeeting(x + hSpeed, y, collisionLayer)) || (TilePlaceMeeting(x + (hDirection * 5), y, collisionLayer)) {
 	switch(animation) {
 		case(ANIMATION.WALK):
 		case(ANIMATION.RUN): {
