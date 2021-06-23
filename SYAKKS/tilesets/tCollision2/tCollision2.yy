@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sTilesCollision",
-    "path": "sprites/sTilesCollision/sTilesCollision.yy",
+    "name": "sTilesCollision2",
+    "path": "sprites/sTilesCollision2/sTilesCollision2.yy",
   },
   "tileWidth": 64,
   "tileHeight": 64,
@@ -18,7 +18,26 @@
   "out_tilevborder": 2,
   "out_columns": 1,
   "tile_count": 2,
-  "autoTileSets": [],
+  "autoTileSets": [
+    {"tiles":[
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+      ],"closed_edge":false,"resourceVersion":"1.0","name":"autotile_1","tags":[],"resourceType":"GMAutoTileSet",},
+  ],
   "tileAnimationFrames": [],
   "tileAnimationSpeed": 15.0,
   "tileAnimation": {
@@ -38,7 +57,7 @@
     "path": "folders/Tile Sets.yy",
   },
   "resourceVersion": "1.0",
-  "name": "tCollision",
+  "name": "tCollision2",
   "tags": [],
   "resourceType": "GMTileSet",
 }
