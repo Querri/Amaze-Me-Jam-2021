@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "sItemPoison",
-    "path": "sprites/sItemPoison/sItemPoison.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": {

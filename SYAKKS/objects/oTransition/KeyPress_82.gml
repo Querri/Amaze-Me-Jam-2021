@@ -1,3 +1,3 @@
 /// @description 
 
-SlideTransition(TRANS_MODE.RESTART);
+SlideTransition(TRANS_MODE.RESTART_ROOM);

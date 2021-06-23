@@ -112,9 +112,9 @@ switch(location) {
 			}
 			case(ANIMATION.FALL):
 			case(ANIMATION.JUMP): {
-				if (hSpeed > walkSpeed) {
+				if ((spriteDirection == 1) && (hSpeed > walkSpeed)) || ((spriteDirection == -1) && (hSpeed < -walkSpeed)) {
 					animation = ANIMATION.RUN;
-				} else if (hSpeed > 0) {
+				} else if ((spriteDirection == 1) && (hSpeed > 0)) || ((spriteDirection == -1) && (hSpeed < 0)) {
 					animation = ANIMATION.WALK;
 				} else {
 					animation = ANIMATION.IDLE;

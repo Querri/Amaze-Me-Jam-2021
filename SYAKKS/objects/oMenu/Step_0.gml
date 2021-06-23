@@ -12,7 +12,8 @@ if (menu_control) {
 	} else if (keyboard_check_pressed(ord("S"))) || (keyboard_check_pressed(vk_down)) {
 		menu_cursor--;
 		if (menu_cursor < 0) menu_cursor = menu_items-1;
-	} else if (keyboard_check_pressed(vk_enter)) || (keyboard_check_pressed(vk_space)) {
+	} else
+	if (keyboard_check_pressed(vk_enter)) || (keyboard_check_pressed(vk_space)) {
 		menu_x_target = gui_width + 400;
 		menu_committed = menu_cursor;
 		menu_control = false;
@@ -21,10 +22,12 @@ if (menu_control) {
 
 if (menu_x > gui_width + 250) && (menu_committed != -1) {
 	switch(menu_committed) {
-		default:
 		case 2: {
-			//audio_play_sound(sndMenuClick, 1, false);
-			SlideTransition(TRANS_MODE.NEXT); 
+			SlideTransition(TRANS_MODE.GOTO, rRocky); 
+			break;
+		}
+		case 1: {
+			SlideTransition(TRANS_MODE.GOTO, rLevelSelect); 
 			break;
 		}
 	}
